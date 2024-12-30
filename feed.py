@@ -34,7 +34,7 @@ for item in yaml_data['item']:
     
     enclosure = xml_tree.SubElement(item_element,'enclosure', {
       'url': link_prefix + item['file'],
-      type: 'audio/mpeg',
+      'type': 'audio/mpeg',
       'length' : item['length']                              
     })
 
